@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navigation/nav.css">
+    <link rel="stylesheet" href="extra/style.css">
+
+    <!-- Importing Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="hamburger">
+        <button onclick="hide()">&#8801;</button>
+    </div>
+
+    <nav class="navList hide">
+
+        <ul class="ul hide">
+            <li><a href="#">Events</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Get touch</a></li>
+            <div class="bc">
+                <button id="butt" class="hide"> Login</button>
+                <button id="butt" class="hide"> Sign Up</button>
+            </div>
+        </ul>
+    </nav>
+    <main>
+
+        <div class="heading">
+
+            <h1>xChats</h1>
+            <p id="break"></p>
+            <h2><span class="typed"></span></h2>
+        </div>
+
+        <div class="form">
+
+            <form action="https://sheetdb.io/api/v1/b70w6hs5ccavr" method="POST" id="sheetdb-form">
+                <input type="text" name="data[name]" placeholder="Username" required>
+                <p id="break"></p>
+                <input type="text" name="data[msg]" id="mes" placeholder="Message" required>
+                <p id="break"></p>
+                <button id="sm">Send</button>
+            </form>
+
+        </div>
+
+
+        <div class="msgbox">
+            <ul id="ul">
+                <li></li>
+            </ul>
+        </div>
+
+    </main>
+
+    <script src="navigation/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="extra/auto.js"></script>
+    <script src="extra/form.js"></script>
+    <script src="extra/ajax.js"></script>
+</body>
+
+</html>
