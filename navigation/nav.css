@@ -10,7 +10,8 @@
     background-color: transparent;
     border: none;
     outline: none;
-    color: rgb(0, 35, 162);
+    color: white;
+    text-shadow: 0 0 0.5rem white;
 }
 
 /* Settingup the Logo */
